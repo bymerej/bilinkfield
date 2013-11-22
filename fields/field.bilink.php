@@ -319,7 +319,7 @@
 		Publish:
 	-------------------------------------------------------------------------*/
 		
-		public function findEntries($entry_ids, $current_entry_id = null, $limit = 50) {
+		public function findEntries($entry_ids, $current_entry_id = null, $limit = 100) {
 			$sectionManager = new SectionManager($this->_engine);
 			$section = $sectionManager->fetch($this->get('linked_section_id'));
 			$entryManager = new EntryManager($this->_engine);
